@@ -1,0 +1,207 @@
+
+
+
+.container {
+  box-sizing: border-box;
+  width: 350px;
+  padding: 0;
+  margin: 0;
+}
+
+.display {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  border-radius: .4rem;
+  margin: .7rem 0;
+}
+
+.operations{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: .8rem;
+  gap: .5rem;
+  border-radius: .4rem;
+}
+
+.btns{
+  all: unset;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem 0 .5rem 0;
+  border-radius: .15rem;
+}
+
+.btns:hover{
+  cursor: pointer;
+  filter : brightness(1.5);
+}
+
+.btns:active {
+  transform: translateY(4px);
+}
+
+#clear,#delete,#equals {
+  font-size: .65rem;
+}
+
+#clear, #equals {
+  grid-column-end: span 2
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  margin-left: .3rem;
+}
+
+.toogle_container{
+  display: flex;
+  align-items: center;
+}
+
+.title{
+  font-size: .45rem;
+  margin-right: .7rem;
+}
+
+.toogle {
+  position: relative;
+  background-color: aqua;
+  width: 65px;
+  height: 18px;
+  padding: 5px;
+  border-radius: 1rem;
+}
+
+.toogle:hover {
+  cursor: pointer;
+}
+
+.toogle:hover > .circle {
+  filter : brightness(1.5);
+}
+
+.labels{
+  position: absolute;
+  font-size: .4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width:70px ;
+  bottom: 18px;
+}
+
+.circle{
+  position: absolute;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  transition: transform 0.2s ease-in-out;
+  background-color: black;
+}
+
+/*Them one*/
+
+.body0{
+  background-color: hsl(222, 26%, 31%);
+}
+
+.nav0{
+  color:white;
+}
+
+.toogle0{
+  background-color: hsl(223, 31%, 20%);
+}
+
+.circ0{
+  background-color: hsl(6, 63%, 50%);
+}
+
+.disp0{
+  background-color: hsl(224, 36%, 15%);
+  color: white;
+}
+
+.op0 {
+  background-color: hsl(223, 31%, 20%);
+}
+
+/*Them two*/
+
+.body1{
+  background-color: hsl(0, 0%, 90%);
+}
+
+.nav1{
+  color: hsl(60, 10%, 19%);
+}
+
+.toogle1{
+  background-color: hsl(0, 5%, 81%);
+}
+
+.circ1{
+  background-color: hsl(25, 98%, 40%);
+  transform: translateX(24px);
+}
+
+.disp1{
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(60, 10%, 19%);
+}
+
+.op1 {
+  background-color: hsl(0, 5%, 81%);
+}
+
+
+
+/*Them three*/
+.body2{
+  background-color: hsl(268, 75%, 9%);
+}
+
+.nav2{
+  color: hsl(52, 100%, 62%);
+}
+
+.toogle2{
+  background-color: hsl(268, 71%, 12%);
+}
+
+.circ2{
+  background-color: hsl(176, 100%, 44%);
+  transform: translateX(47px);
+}
+
+.disp2{
+  background-color: hsl(268, 71%, 12%);
+  color: hsl(52, 100%, 62%);
+}
+
+.op2 {
+  background-color: hsl(268, 71%, 12%);
+}
+
+ 
+@media screen and (min-width:480px){
+  .container {
+    width:450px;
+  }
+  
+}
